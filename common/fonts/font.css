@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ySpotlight';
+    src: url(../fonts/ySpotlight.woff) format('woff'),
+    url(../fonts/ySpotlight.woff2) format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}

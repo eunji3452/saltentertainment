@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/***** main ******/
+.container main .photo .photoImg{
+    height: 1073px;
+}
+
+.container main .photo .photoImg li{
+    width: 30%;
+}
