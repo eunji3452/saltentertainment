@@ -52,8 +52,7 @@ img {vertical-align: top;}
     background: url(common/images/banner/m_bg.png) no-repeat 50% 0 /cover, url(common/images/banner/m_banner.png) #CBE5B6 no-repeat 50% 0/contain;
 }
 .container main .bannerT img {
-
-    margin-bottom: 12%;
+    margin-bottom: 40px;
     text-align: center;
 }
 
