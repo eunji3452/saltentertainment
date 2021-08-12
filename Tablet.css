@@ -1,8 +1,18 @@
 @charset "utf-8";
+/***** header ******/
 
 /***** main ******/
+.container main .bannerT {
+    background: url(common/images/banner/T_bg.png) no-repeat 50% 0 /cover, url(common/images/banner/t_banner.png) #66AD92 no-repeat 50% 0/contain;
+}
+.container main .bannerT .bannerTittle {
+    display: block; width: 62%; margin-bottom: 50px;
+}
+.container main .bannerT .m_bannerTittle {
+    display: none;
+}
 .container main .photo .photoImg{
-    height: 1073px;
+    height: 1050px;
 }
 
 .container main .photo .photoImg li{
