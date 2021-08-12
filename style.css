@@ -156,6 +156,7 @@ img {vertical-align: top;}
     width: 100%;
     box-sizing: border-box;
     margin: 0; height: 1040px;
+    overflow: hidden;
 }
 .container main .photo .photoImg li {
     margin-bottom: 5%;
@@ -239,6 +240,3 @@ img {vertical-align: top;}
     font-size: 0.9rem;
     color: #333333;
 }
-
-/***** 테블릿 *****/
-/***** pc *****/
