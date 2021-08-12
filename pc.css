@@ -89,7 +89,6 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 }
 .container main .artists .artistsImg {
     display: grid;
-
     width: 100%;
     gap: 1.78vw;
     grid-template-columns: repeat(4,23%);
@@ -98,6 +97,8 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 }
 .container main .artists .artistsImg li {
     width: 100%; 
+    position: relative;
+    overflow: hidden;
 }
 .container main .artists .artistsImg li img {
     width: 100%;
@@ -137,6 +138,49 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 .container main .artists .artistsImg .name_k {
     display: none;
 }
+
+/* animation */
+.container main .artists .artistsImg li .name_e {
+    display: block;
+    position: absolute; text-transform: uppercase;
+    color: rgba(36, 206, 123, 0.7); font-size: 4.5rem;
+    padding: 0; margin: 0; 
+}
+.container main .artists .artistsImg li:nth-child(6) .name_e,
+.container main .artists .artistsImg li:nth-child(7) .name_e{
+    font-size: 3.5rem;
+}
+.container main .artists .artistsImg li .name1{
+    top: 0; left: 400px;
+}
+.container main .artists .artistsImg li .name2{
+    top: 50%; right: 400px; transform: translate(0, -50%);
+}
+.container main .artists .artistsImg li .name3{
+    bottom: 0; left: 400px;
+}
+.container main .artists .artistsImg li:hover .name1{
+    animation: ani1 0.2s 0s ease forwards;
+}
+.container main .artists .artistsImg li:hover .name2{
+    animation: ani2 0.2s ease forwards;
+}
+.container main .artists .artistsImg li:hover .name3{
+    animation: ani1 0.15s ease-in forwards;
+}
+@keyframes ani1 {
+    to {
+        left: 0;
+    }
+}
+@keyframes ani2 {
+    to {
+        right: 0;
+    }
+}
+
+
+
 .container main .photo .photoImg{
     height: 1340px;
     padding: 0;
