@@ -183,7 +183,10 @@ padding: 0;
 .container main .video .video_box li{
     width: 55%;
 }
+.container main .video .video_box li p {
+    font-size: 28px;
 
+}
 .container main .video .video_box li:nth-child(2) {
  margin-left: 45%;
 }
