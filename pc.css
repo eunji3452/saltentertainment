@@ -36,14 +36,14 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
     margin-left: 30px;
 }
 .container header .sns li a { width: 30px; height: 30px; text-indent: -9999px;}
-.container header .sns li:nth-child(1){background: url(common/icon/1icon_post.png) no-repeat 0 0 / contain;}
+.container header .sns li:nth-child(1){background: url(common/icon/naverpost.svg) no-repeat 0 0 / contain;}
 .container header .sns li:nth-child(2){background: url(common/icon/instagram.svg);}
 .container header .sns li:nth-child(3){background: url(common/icon/icon_vlive_w.png) no-repeat 0 0 /contain;}
 .container header .m_btn {display: none;}
 
 
 .container main .bannerT {
-    background: url(common/images/banner/pc_bg.png) no-repeat 50% 0 /cover, url(common/images/banner/pc_banner.png) #66AD92 no-repeat 50% 0/cover;
+    background: url(common/images/banner/pc_bg.png) no-repeat 50% 0 /cover, url(common/images/banner/pc_banner.png) #66AD92 no-repeat 50% 0/contain;
 }
 .container main .bannerT .bannerTittle {
     display: block; width: 48%; margin-top: 100px;
@@ -155,12 +155,12 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 }
 .container main .banner_b .notice {
     grid-column: 1/2;
-    background:url(common/images/banner/notice.png) no-repeat 50% 50% / cover ;
+    background:url(common/images/banner/panner_pcN.png) no-repeat 50% 50% / contain ;
     height: 322px;
 }
 .container main .banner_b .audition {
     grid-column: 2/3;
-    background-image: url(common/images/banner/audition.png);
+    background: url(common/images/banner/banner_pcA.png) no-repeat 50% 50% /contain;
     height: 322px; 
 }
 .container main .banner_b aside h4 {
@@ -170,7 +170,7 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
     letter-spacing: 0.1rem;
 }
 .container main .banner_b .notice h4 {
-   left: 260px;
+   position: absolute; left:28%;
 }
 .container main .banner_b aside h4 ::after {
     background-size: 18px 18px;
