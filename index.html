@@ -219,5 +219,18 @@
            <li>Copyright © SALT Entertainment. All rights reserved.</li>
        </ul>
     </div> 
+
+    <script>
+        const m_btn = document.querySelector('.m_btn');
+        const gnb = document.querySelector('.gnb');
+        const sns = document.querySelector('.sns');
+
+        function toggleMenu() {
+        gnb.classList.toggle('active');
+        m_btn.classList.toggle('active');
+        sns.classList.toggle('active');
+        }
+        m_btn.addEventListener('click', toggleMenu);
+    </script>
 </body>
 </html>

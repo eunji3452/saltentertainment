@@ -22,13 +22,14 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 }
 .container > header > .gnb > li {
     float: left; width: 25%; text-align: center; line-height: 93px;
-    font-size: 1.2rem; box-sizing: border-box;
+    font-size: 1.2rem; box-sizing: border-box; padding: 0;
 }
 
 .container header .gnb li ul {
     display: none;
 }
 .container header .sns {
+    height: auto;
     position: absolute; top: 15px; right: 50px;
 }
 .container header .sns li{
@@ -37,10 +38,13 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 }
 .container header .sns li a { width: 30px; height: 30px; text-indent: -9999px;}
 .container header .sns li:nth-child(1){background: url(common/icon/naverpost.svg) no-repeat 0 0 / contain;}
-.container header .sns li:nth-child(2){background: url(common/icon/instagram.svg);}
+.container header .sns li:nth-child(2){background: url(common/icon/instagram.svg)no-repeat 0 0 / contain;}
 .container header .sns li:nth-child(3){background: url(common/icon/icon_vlive_w.png) no-repeat 0 0 /contain;}
 .container header .m_btn {display: none;}
 
+.container header .sns.active {display: none;}
+.container header .gnb.active {display: none;}
+.container header .m_btn.active {display: none;}
 
 .container main .bannerT {
     background: url(common/images/banner/pc_bg.png) no-repeat 50% 0 /cover, url(common/images/banner/pc_banner.png) #66AD92 no-repeat 50% 0/contain;
@@ -182,7 +186,7 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 
 
 .container main .photo .photoImg{
-    height: 1340px;
+    height: 80vw;
     padding: 0;
 }
 
@@ -191,6 +195,14 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 }
 .container main .photo .photoImg .pcphoto {
     display: block;
+}
+
+.container main .photo .photoImg li img:hover {
+    opacity: 0.6;
+}
+
+.container main .photo h3 {
+    margin-top: 0;
 }
 .container main .banner_b {
     display: grid;
@@ -225,14 +237,20 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
 padding: 0;
 }
 .container main .video .video_box li{
-    width: 55%;
+    width: 65%;
 }
+.container main .video .video_box li .video_u{
+    padding-bottom: 51.5%;
+} 
 .container main .video .video_box li p {
     font-size: 28px;
 
 }
 .container main .video .video_box li:nth-child(2) {
- margin-left: 45%;
+ margin-left: 35%;
+}
+.container main .video .video_box li .video3 {
+    margin: 0;
 }
 .container .footer_txt {
     margin:0 260px; padding: 30px 0 70px; 
