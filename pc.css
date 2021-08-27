@@ -96,7 +96,7 @@ h2 {margin-left: 0;} h3 {padding-left: 0; margin-top: 10vh;}
     width: 100%;
     gap: 1.78vw;
     grid-template-columns: repeat(4,23%);
-    grid-auto-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     flex-flow: row wrap; padding: 0;
 }
 .container main .artists .artistsImg li {
